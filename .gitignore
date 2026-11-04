@@ -1,0 +1,31 @@
+# ---- Build output ----
+target/
+build/
+out/
+*.class
+*.jar
+*.war
+*.ear
+
+# ---- IDE ----
+.idea/
+*.iml
+*.ipr
+*.iws
+.vscode/
+.settings/
+.project
+.classpath
+
+# ---- OS ----
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ---- Logs / temp ----
+*.log
+logs/
+*.tmp
+
+# ---- Local tooling (commit publisher) ----
+.publisher/
