@@ -1,0 +1,21 @@
+spring:
+  application:
+    name: UserService
+  profiles:
+    active: prod
+
+mybatis-plus:
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+  global-config:
+    db-config:
+      logic-delete-field: isDelete
+      logic-delete-value: 1
+      logic-not-delete-value: 0
+
+server:
+  port: 8104
+
+snowflake:
+  workerId: 1
+  datacenterId: 1
