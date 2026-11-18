@@ -1,0 +1,10 @@
+spring:
+  application:
+    name: GateWay
+  profiles:
+    active: prod
+  main:
+    web-application-type: reactive
+
+server:
+  port: 10010
