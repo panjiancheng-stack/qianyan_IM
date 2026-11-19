@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: RealTimeService
+  profiles:
+    active: prod
+
+server:
+  port: 8102
+
+snowflake:
+  workerId: 1
+  datacenterId: 1
