@@ -1,0 +1,36 @@
+spring:
+  application:
+    name: RedPacketService
+  profiles:
+    active: prod
+  mail:
+    host: smtp.qq.com
+    port: 587
+    username: 1812872969@qq.com
+    password: fcmfmmbiwefzecgc
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
+  cloud:
+    openfeign:
+      circuitbreaker:
+        enabled: true
+
+mybatis-plus:
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+  global-config:
+    db-config:
+      logic-delete-field: isDelete
+      logic-delete-value: 1
+      logic-not-delete-value: 0
+
+server:
+  port: 8103
+
+redpacket:
+  validation:
+    enabled: true
