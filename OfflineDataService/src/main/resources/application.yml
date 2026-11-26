@@ -1,0 +1,8 @@
+spring:
+  application:
+    name: OfflineDataService
+  profiles:
+    active: prod
+
+server:
+  port: 8101
